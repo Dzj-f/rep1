@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/cart/cart",
+    "pages/buy/buy",
+    "pages/fenlei/fenlei",
+    "pages/my/my",
+    "pages/logs/logs",
+    "pages/list/list",
+    "pages/search/search"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#919191",
+    "navigationBarTitleText": "志杰的测试号",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "pagePath": "pages/my/my",
+    "list": [
+      {
+        "selectedIconPath": "/new/images/logo/cart1.png",
+        "iconPath": "/new/images/logo/cart2.png",
+        "pagePath": "pages/cart/cart",
+        "text": "购物车"
+      },
+      {
+        "selectedIconPath": "/new/images/logo/top1.png",
+        "iconPath": "/new/images/logo/top2.png",
+        "pagePath": "pages/buy/buy",
+        "text": "订单"
+      },
+      {
+        "selectedIconPath": "/new/images/logo/sort1.png",
+        "iconPath": "/new/images/logo/sort2.png",
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "/new/images/logo/top1.png",
+        "iconPath": "/new/images/logo/top2.png",
+        "pagePath": "pages/fenlei/fenlei",
+        "text": "分类"
+      },
+      {
+        "selectedIconPath": "/new/images/logo/my1.png",
+        "iconPath": "/new/images/logo/my2.png",
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

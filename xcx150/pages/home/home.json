@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "d_slider":"/components/d_slider/d_slider",
+    "d_scroll":"/components/d_scroll/d_scroll",
+    "d_list":"/components/d_list/d_list",
+    "d_list2":"/components/d_list2/d_list2",
+    "d_gotop":"/components/d_gotop/d_gotop"
+  }
+}

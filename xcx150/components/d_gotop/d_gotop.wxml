@@ -1,0 +1,4 @@
+
+<view class="picout" bind:tap="tapdleBackTop">
+<image src="/images/q/1.jpg" style="width:100rpx;height:100rpx"></image>
+</view>

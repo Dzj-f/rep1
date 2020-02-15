@@ -1,0 +1,8 @@
+.picout{
+ width:100rpx;
+ height:100rpx;
+ position: fixed;
+ z-index: 5;
+ right: 40rpx;
+ bottom:40rpx;
+}

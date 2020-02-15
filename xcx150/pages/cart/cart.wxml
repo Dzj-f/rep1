@@ -1,0 +1,54 @@
+<view class="pages">
+
+  <view wx:if="{{shoplist}}" data-index="{{index}}">
+      <!-- 列表 -->
+       <!-- 根据selected决定是否选中 -->
+      <view class="list" wx:for="{{shoplist}}" wx:key="index">
+           <image wx:if="{{item.selected}}"  class="radio_chek"   bindtap="selectList"  
+                           data-index="{{index}}" src='/new/images/logo/cart1.png'></image>
+           <image wx:else class="radio_chek"   bindtap="selectList" 
+                           data-index="{{index}}"  src='/new/images/logo/cart2.png'  ></image>
+            <!-- 列表标题 -->
+            <text class="list_name">{{item.text}}</text>
+            <!-- 列表商品图片 -->
+            <image class="list_img" src="{{item.url}}"></image>
+            <!-- 属性 -->
+            <text class="cart_g_name">属性: {{item.pro_name}}</text>   
+            <!-- 价格 -->
+            <text class="list_price">￥{{item.price}}</text>
+            <!-- 商品数量加减  style='display:{{show_edit}}'-->
+            <view style='display:{{show_edit}}'>
+            <view class="carts-num">
+          <!--减按钮  -->
+          <lable class="minus" bindtap="btn_minus" data-obj="{{obj}}" data-index="{{index}}">-</lable>
+          <!-- 文本框值 -->
+          <!-- <input class="view_text_center" disabled='disabled' value="{{item.num}}" bindinput='input_num' data-index="{{index}}"></input> -->
+          <label class="view_text_center"  bindinput='input_num' data-index="{{index}}">{{item.num}}</label>
+          <!-- <text class="cart-count-num">{{item.num}}</text> -->
+          <!-- 加按钮-->
+          <lable class="plus" bindtap="btn_add" data-index="{{index}}">+</lable>
+        </view></view>
+        <!-- 删除 -->
+        <text class="list_del" bindtap="deleteList" data-index="{{index}}">×</text> 
+    </view>
+<!-- 固定底部 -->
+    <view class="cont_bot">
+    <!-- 全选ICON -->
+    <image wx:if="{{selectAllStatus}}"  class="total-select" bindtap="selectAll" 
+              src='/new/images/logo/cart1.png'></image>
+     <image  wx:else  class="total-select" bindtap="selectAll"
+                                           src='/new/images/logo/cart2.png'></image>
+         <!-- 全选标题 -->
+      <text class='sel_count_name'>全选</text>
+      <!-- 合计金额 -->
+      <lable class="count_price">合计：<text>￥{{totalPrice}}</text></lable>
+      <!-- 提交订单 -->
+      <label class='submit' bindtap='btn_submit_order'>提交订单</label>
+      </view>
+      <view class='qq'></view>
+  </view>
+  <view wx:else>
+    <view class="list_none">购物车是空的哦~</view>
+  </view>
+ 
+</view>

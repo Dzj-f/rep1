@@ -1,0 +1,9 @@
+<view class="shoplist">
+    <block wx:for="{{shoplist}}" wx:key="item.id"> 
+     <view class='tps'>
+        <view class='tp'><image src="{{item.url}}" ></image></view>
+        <view class='tx'><text style="font-size:26rpx">{{item.text}}</text></view>
+    </view>
+    </block>
+    <view>list</view>
+</view>

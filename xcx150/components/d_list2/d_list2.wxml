@@ -1,0 +1,8 @@
+<view class="tptx1">
+    <navigator wx:for="{{list}}" wx:key="_id" url='/pages/list/list?cat={{item._id}}'
+    > 
+     <view class='tps1'>
+        <view class='tp1'><image src="{{item.url}}" class="pic"></image></view>
+    </view>
+    </navigator> 
+</view>

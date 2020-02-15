@@ -1,0 +1,89 @@
+<!--pages/car/car.wxml-->
+<view class="container">
+  <view class='userinfoOut'>
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+    </view>
+  </view>
+  <!-- <view class="aa">
+    <view class='aa-float'>
+          <block >
+            <image bindtap="bindViewTap" class="aa-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+            <text class="aa-nickname">{{userInfo.nickName}}</text>
+          </block>
+    </view>
+    <view class='aa-float'>
+          <block>
+            <image bindtap="bindViewTap" class="aa-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+            <text class="aa-nickname">{{userInfo.nickName}}</text>
+          </block>
+    </view>       
+    <view class='aa-float'>
+          <block >
+            <image bindtap="bindViewTap" class="aa-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+            <text class="aa-nickname">{{userInfo.nickName}}</text>
+          </block>
+    </view>
+    <view class='aa-float'>    
+          <block >
+            <image bindtap="bindViewTap" class="aa-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+            <text class="aa-nickname">{{userInfo.nickName}}</text>
+          </block>
+    </view>  
+        
+</view> -->
+<view class="tptx1">
+      <view class='dingdangs'>
+         <text class='dingdang'>我的订单</text>
+         <text class='check'>查看全部订单</text> 
+      </view>
+      <view class="float">
+          <navigator  class='tptx2' wx:for="{{centerList}}" wx:key="item.id" url='/pages/list/list?cat={{item.id}}'> 
+          <view class='tps1'>
+              <image class='tp1' src="{{item.url}}" ></image>
+               <text class="tp2">{{item.text}}</text>
+          </view>
+          </navigator> 
+      </view>
+ </view>     
+<view class="tptx1">
+      <view class='dingdangs'>
+         <text class='dingdang'>购物车</text>
+         <!-- <text class='check'>查看全部订单</text> -->
+      </view>
+      <view class="float">
+          <navigator  class='tptx2' wx:for="{{centerList}}" wx:key="item.id" url='/pages/list/list?cat={{item.id}}'> 
+          <view class='tps1'>
+              <image class='tp1' src="{{item.url}}" ></image>
+               <text class="tp2">{{item.text}}</text>
+          </view>
+          </navigator> 
+      </view>
+ </view>     
+<view class="tptx1">
+      <view class='dingdangs'>
+         <text class='dingdang'>推荐分享</text>
+         <!-- <text class='check'>查看全部订单</text> -->
+      </view>
+      <view class="float">
+          <navigator  class='tptx2' wx:for="{{centerList}}" wx:key="item.id" url='/pages/list/list?cat={{item.id}}'> 
+          <view class='tps1'>
+              <image class='tp1' src="{{item.url}}" ></image>
+               <text class="tp2">{{item.text}}</text>
+          </view>
+          </navigator> 
+      </view>
+ </view>     
+   
+    
+</view>
+
+
+
+
+
+

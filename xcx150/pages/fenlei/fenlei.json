@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "d_search":"/components/d_search/d_search",
+    "d_list":"/components/d_list/d_list"
+  }
+
+}

@@ -1,0 +1,18 @@
+  <view class='outlist'>
+        <!-- 列表 -->
+        <view class="list" wx:for="{{list}}"  
+                wx:key="item._id" name="shopList">
+                <!-- 列表商品图片 -->
+                <image class="list_img" name="url" src="{{item.url}}"></image>
+                <!-- 列表标题 -->
+                <text class="list_name" name="text">{{item.text}}</text>
+                <!-- 属性 -->
+                <text class="cart_g_name" name="pro_name"  >属性: {{item.pro_name}}</text>   
+                <!-- 价格 -->
+                <text class="list_price"  name="price" >￥{{item.price}}</text>
+            <view class="shop">
+              <button class="shop-button"  
+               bindtap="addCars" data-shoplist="{{list[index]}}">加入购物车</button>
+            </view>   
+       </view>  
+</view>

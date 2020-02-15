@@ -1,0 +1,12 @@
+ <view class='page_row' >
+          <view class="search">
+            <view class="df search_arr">
+              <icon class="searchcion" size='20' type='search'></icon>
+              <input class="" type="text" placeholder="请输入搜索内容" value="{{wxSearchData}}"
+                 bindinput="wxSearchInput" bindconfirm="wxSearchConfirm"/>
+            </view>
+          </view>
+          <view class='sousuo' bindtap="suo">搜索</view>
+</view>
+
+

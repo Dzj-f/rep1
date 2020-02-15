@@ -1,0 +1,38 @@
+<view class="new-container">
+<!-- 轮播图 -->
+<view class="slider" >
+<d_slider list="{{sliderList}}" />
+</view>
+
+<!-- 水平滚动1 -->
+<view style='margin-top:40rpx'>
+<text style='margin-left:20rpx;font-size:36rpx;font-weight:bold'>面料分类</text>
+<d_scroll list="{{sliderList}}" />
+</view>
+
+<!-- 水平滚动2 -->
+<view style='margin-top:40rpx'>
+<text style='margin-left:20rpx;font-size:36rpx;font-weight:bold'>面料主题</text>
+<text style='display:block;margin-left:20rpx'>2019年春/夏最新趋势面料</text>
+<d_scroll list="{{sliderList}}" />
+</view>
+
+<!-- 水平滚动3 -->
+<view style='margin-top:40rpx;position: relative'>
+<text style='display:block;margin-left:20rpx;font-size:36rpx;font-weight:bold'>原创款式</text>
+<text style='display:inline-block;margin-left:20rpx'>原创样式，增值服务</text>
+<text style='display:inline-block;right:20rpx;position: absolute'>查看全部</text>
+<d_scroll list="{{sliderList}}" />
+</view>
+
+<!-- 商品列表 -->
+<d_list list="{{shopList}}" />
+
+<!-- 回到顶部 -->
+<d_gotop wx:if="{{showBackTop}}"/>
+
+
+</view>
+
+
+

@@ -1,0 +1,66 @@
+/* 中间部件 */
+.tptx{
+  margin: 20rpx;
+   clear: both;
+  /* 水平居中 */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.tps{
+  height: 260rpx;
+  width: 95%;
+  border-top : solid 1rpx darkgray;
+  /* 不换行 */
+  display: flex;
+  flex-flow : row;   
+}
+.tp{
+ float: left;
+ width: 30%;
+ margin: 20rpx;
+ /* 垂直居中 */
+ display: flex;
+flex-direction: column;
+justify-content: center; 
+/* height: 230rpx; */
+/* 给了高度就不想对于父类垂直居中了，为什么？ */
+}
+.tx{
+margin: 20rpx;
+padding: 10rpx;
+width: 70%;
+ /* 文字垂直居中 */
+display: flex;
+flex-direction: column;
+justify-content: center;
+/* 文字换行 */
+word-break: break-all
+}
+.pic{
+  height: 100%;
+  width:100%;
+  border-radius: 10rpx;
+}
+
+/* 中间空间 */
+.tptx1{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap; 
+  padding: 20rpx 6rpx 20rpx 6rpx;
+  border-bottom: 1rpx solid #e9e9e9;
+}
+.tps1{
+
+float: left;
+margin: 12rpx;
+}
+.pic{
+  height: 150rpx;
+  width:150rpx;
+  border-radius: 50%;
+}

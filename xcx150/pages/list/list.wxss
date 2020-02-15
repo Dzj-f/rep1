@@ -1,0 +1,45 @@
+.tshoplist{
+  margin: 20rpx;
+  /* 清除浮动 */
+   clear: both;
+  /* 水平居中 */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.tps{
+  height: 260rpx;
+  width: 95%;
+  border-top : solid 1rpx darkgray;
+  /* 不换行 */
+  display: flex;
+  flex-flow : row;   
+}
+.tp{
+ float: left;
+ width: 30%;
+ margin: 20rpx;
+ /* 垂直居中 */
+ display: flex;
+flex-direction: column;
+justify-content: center; 
+/* height: 230rpx; */
+/* 给了高度就不想对于父类垂直居中了，为什么？ */
+}
+.tx{
+margin: 20rpx;
+padding: 10rpx;
+width: 70%;
+ /* 文字垂直居中 */
+display: flex;
+flex-direction: column;
+justify-content: center;
+/* 文字换行 */
+word-break: break-all
+}
+.tp image{
+  height: 220rpx;
+  width:220rpx;
+  border-radius: 10rpx;
+}

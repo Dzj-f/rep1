@@ -1,0 +1,8 @@
+   <view class='conter'>
+   <!-- 搜索功能 -->
+      <d_search />
+
+   <!-- 商品列表页 -->
+   <d_list list="{{shopList}}" />
+
+  </view>
